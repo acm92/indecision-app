@@ -1,0 +1,40 @@
+.big-button {
+    background-color: $purple;
+    border: none;
+    //darken is a SCSS predefined function: darkening a color by a percentage. A faked tridimensional look in the button this way
+    border-bottom: .6rem solid darken($purple, 10%);
+    color: white;
+    font-weight: bold;
+    font-size: $l-size;
+    margin-bottom: $xl-size;
+    padding: 2.4rem;
+    width: 100%; 
+}
+
+.big-button:disabled{
+
+    opacity: .5;
+
+}
+
+@media(min-width: $desktop-breakpoint) {
+    
+}
+
+//Regular button
+.button {
+    background: $purple;
+    border: none;
+    border-bottom: .3rem solid darken($purple, 10%);
+    color: white;
+    font-weight: 500;
+    padding: $s-size;
+}
+
+//BEM convention for modifyers. Add more characteristics to "button"
+.button--link {
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}

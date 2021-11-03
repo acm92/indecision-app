@@ -1,0 +1,24 @@
+//px, rem. Sizes
+//1rem is 16 pixels
+html {
+    //Base 10 system with rem.
+    font-size: 62.5%
+}
+
+body {
+    //Choose Helvetica. If it doesn't exist, choose the remaining.
+    font-family: Helvetica, Arial, sans-serif;
+    //This will translate to 16 pixels
+    font-size: $m-size;
+    background-color: $dark-blue;
+}
+
+//Target all buttons
+button {
+    //Hand
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor:default;
+}
