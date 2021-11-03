@@ -7,7 +7,7 @@ const path = require("path")
 module.exports = {
     entry: "./src/app.js",
     output: {
-        path: path.join(__dirname, "public"),
+        path: path.join(__dirname, "docs"),
         filename: "bundle.js"
     },
     module: {
@@ -30,7 +30,7 @@ module.exports = {
     },
     devtool: "eval-cheap-module-source-map",
     devServer: {
-        static: path.join(__dirname, "public"),
+        static: path.join(__dirname, "docs"),
         compress: true,
         port: 8080
     },
